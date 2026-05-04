@@ -1,1 +1,1 @@
-echo "Hello Hassam Ahmad, This is the deployment script for your project. Please follow the instructions below to deploy your application."
+echo "Hello Hassam Ahmad, This is the deployment script for your project. Please follow the instructions below to deploy your application with ahmad."
