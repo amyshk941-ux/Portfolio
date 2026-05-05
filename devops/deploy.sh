@@ -8,7 +8,7 @@ TARGET_DIR="/var/www/Portfolio/client"
 
 echo "===== Starting Deployment ====="
 
-cd "$APP_DIR"   # 🔴 CRITICAL FIX
+cd "$APP_DIR"
 
 echo "===== Installing Dependencies ====="
 npm install
@@ -22,9 +22,7 @@ sudo rsync -av --delete "$BUILD_DIR/" "$TARGET_DIR/"
 echo "===== Fix Permissions ====="
 sudo chown -R www-data:www-data "$TARGET_DIR"
 
-systemctl daemon-reload
 echo "===== Restarting Nginx ====="
 sudo systemctl restart nginx
 
 echo "===== Done ====="
-
