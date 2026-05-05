@@ -26,3 +26,5 @@ echo "===== Restarting Nginx ====="
 sudo systemctl restart nginx
 
 echo "===== Done ====="
+
+systemctl daemon-reload
